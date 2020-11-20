@@ -5,7 +5,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   entry: {
     index: './src/index.js',
-    navbar: './src/navbar.js',
   },
   plugins: [
     new CleanWebpackPlugin(),

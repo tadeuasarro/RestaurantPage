@@ -1,11 +1,12 @@
 import _ from 'lodash';
-import navbar from './navbar.js';
+import nav from './navbar.js';
 
 function component() {
 
-  const element = document.getElementbyId('content');
-  element.appendChild(navbar);
-  navbar
+  const element = document.createElement('div');
+  element.id = 'content';
+
+  element.appendChild(nav);
   // content.appendChild(section);
   // content.appendChild(footer);
 
