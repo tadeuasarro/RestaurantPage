@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import './styles.css';
 import nav from './navbar.js';
-import main from './main.js';
+import main from './main/main.js';
 import footer from './footer.js';
 
 function component() {
