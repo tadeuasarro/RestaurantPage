@@ -2,6 +2,7 @@ import _ from 'lodash';
 import './styles.css';
 import nav from './navbar.js';
 import main from './main.js';
+import footer from './footer.js';
 
 function component() {
 
@@ -10,7 +11,7 @@ function component() {
 
   element.appendChild(nav);
   element.appendChild(main);
-  // content.appendChild(footer);
+  element.appendChild(footer);
 
   return element;
 }
