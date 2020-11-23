@@ -5,10 +5,10 @@ const footer = () => {
   const small = document.createElement('small');
   small.innerHTML = 'All rights reserved 2020';
 
-  footer.innerHTML = "Coxinha's Heaven - "
+  footer.innerHTML = "Coxinha's Heaven - ";
   footer.appendChild(small);
 
   return footer;
-}
+};
 
 export default footer();

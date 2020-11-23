@@ -1,11 +1,9 @@
-import _ from 'lodash';
 import './styles.css';
-import nav from './navbar.js';
-import main from './main/main.js';
-import footer from './footer.js';
+import nav from './navbar';
+import main from './main/main';
+import footer from './footer';
 
 function component() {
-
   const element = document.createElement('div');
   element.id = 'content';
 

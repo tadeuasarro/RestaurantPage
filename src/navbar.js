@@ -8,6 +8,6 @@ const nav = () => {
   navbar.appendChild(h1);
 
   return navbar;
-}
+};
 
 export default nav();

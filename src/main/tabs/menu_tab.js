@@ -1,7 +1,7 @@
-import contact_tab from './contact_tab.js';
+/* eslint import/no-cycle: "off", curly: "off" */
+import contactTab from './contact_tab';
 
-const menu_tab = () => {
-
+const menuTab = () => {
   const container = document.createElement('div');
   container.classList.add('mb-3');
 
@@ -25,32 +25,31 @@ const menu_tab = () => {
 
   const title = document.createElement('h3');
   title.innerHTML = 'Menu';
-  title.classList.add('bg-dark', 'text-light', 'm-0', 'px-3', 'pt-3')
+  title.classList.add('bg-dark', 'text-light', 'm-0', 'px-3', 'pt-3');
 
   const paragraph = document.createElement('p');
   paragraph.classList.add('mb-0', 'p-3', 'bg-dark', 'text-light', 'text-justify');
-  paragraph.innerHTML = "Nullam nisl risus, accumsan at justo et, dapibus tristique sem. Phasellus pulvinar congue erat at suscipit. Sed a dolor posuere, egestas eros sed, imperdiet mauris. Curabitur finibus vel sem efficitur mollis. Nam vitae ante justo. Sed sollicitudin auctor diam, iaculis ullamcorper augue consectetur quis. Mauris libero augue, suscipit quis lacus non, feugiat gravida ipsum. Curabitur vitae dignissim nunc, et vehicula sem. Proin iaculis fringilla orci eu scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam sit amet lorem pharetra, vehicula nibh bibendum, vulputate sapien. Cras faucibus libero at lectus mollis pellentesque.";
+  paragraph.innerHTML = 'Nullam nisl risus, accumsan at justo et, dapibus tristique sem. Phasellus pulvinar congue erat at suscipit. Sed a dolor posuere, egestas eros sed, imperdiet mauris. Curabitur finibus vel sem efficitur mollis. Nam vitae ante justo. Sed sollicitudin auctor diam, iaculis ullamcorper augue consectetur quis. Mauris libero augue, suscipit quis lacus non, feugiat gravida ipsum. Curabitur vitae dignissim nunc, et vehicula sem. Proin iaculis fringilla orci eu scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam sit amet lorem pharetra, vehicula nibh bibendum, vulputate sapien. Cras faucibus libero at lectus mollis pellentesque.';
 
   content.appendChild(title);
   content.appendChild(paragraph);
 
   container.appendChild(navbar);
-  container.appendChild (content);
+  container.appendChild(content);
 
-  contact.addEventListener('click', function(){
-    const small_container = document.getElementById('small_container');
-    small_container.innerHTML = '';
-    small_container.appendChild(contact_tab);
+  contact.addEventListener('click', () => {
+    const smallContainer = document.getElementById('small_container');
+    smallContainer.innerHTML = '';
+    smallContainer.appendChild(contactTab);
   });
 
-  menu.addEventListener('click', function(){
-    const small_container = document.getElementById('small_container');
-    console.log(small_container);
-    small_container.innerHTML = '';
-    small_container.appendChild(menu_tab());
+  menu.addEventListener('click', () => {
+    const smallContainer = document.getElementById('small_container');
+    smallContainer.innerHTML = '';
+    smallContainer.appendChild(menuTab());
   });
 
   return container;
-}
+};
 
-export default menu_tab();
+export default menuTab();

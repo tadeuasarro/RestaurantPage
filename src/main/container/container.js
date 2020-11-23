@@ -1,10 +1,9 @@
-import row1 from './row1.js';
-import row2 from './row2.js';
-import row3 from './row3.js';
-import row4 from './row4.js';
+import row1 from './row1';
+import row2 from './row2';
+import row3 from './row3';
+import row4 from './row4';
 
 const container = () => {
-
   const container = document.createElement('div');
 
   container.appendChild(row1);
@@ -13,6 +12,6 @@ const container = () => {
   container.appendChild(row4);
 
   return container;
-}
+};
 
 export default container();

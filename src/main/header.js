@@ -1,28 +1,26 @@
 const header = () => {
+  const emptyDivision = document.createElement('div');
 
-  const empty_division = document.createElement('div');
+  const headerImage = document.createElement('div');
+  headerImage.classList.add('header-image');
 
-  const header_image = document.createElement('div');
-  header_image.classList.add('header-image');
-
-  const par_container = document.createElement('div');
-  par_container.classList.add('text-center', 'p-3', 'h4', 'mb-0')
+  const parContainer = document.createElement('div');
+  parContainer.classList.add('text-center', 'p-3', 'h4', 'mb-0');
 
   const par1 = document.createElement('p');
   par1.innerHTML = "Welcome to Coxinha's Heaven!";
 
   const par2 = document.createElement('p');
-  par2.innerHTML = "Our business is totally dedicated to this Brazilian cousine delicacy.";
+  par2.innerHTML = 'Our business is totally dedicated to this Brazilian cousine delicacy.';
   par2.classList.add('mb-0');
 
-  par_container.appendChild(par1);
-  par_container.appendChild(par2);
+  parContainer.appendChild(par1);
+  parContainer.appendChild(par2);
 
-  empty_division.appendChild(header_image);
-  empty_division.appendChild(par_container);
+  emptyDivision.appendChild(headerImage);
+  emptyDivision.appendChild(parContainer);
 
-  return(empty_division);
-
-}
+  return (emptyDivision);
+};
 
 export default header();

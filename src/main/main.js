@@ -1,6 +1,6 @@
-import header from './header.js';
-import container from './container/container.js';
-import contact_tab from './tabs/contact_tab.js';
+import header from './header';
+import container from './container/container';
+import contactTab from './tabs/contact_tab';
 
 const main = () => {
   const element = document.createElement('main');
@@ -9,12 +9,12 @@ const main = () => {
   element.appendChild(header);
   element.appendChild(container);
 
-  const small_container = document.createElement('div');
-  small_container.appendChild(contact_tab);
-  small_container.id = 'small_container'
-  element.appendChild(small_container);
+  const smallContainer = document.createElement('div');
+  smallContainer.appendChild(contactTab);
+  smallContainer.id = 'small_container';
+  element.appendChild(smallContainer);
 
   return element;
-}
+};
 
 export default main();

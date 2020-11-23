@@ -1,6 +1,6 @@
 const row3 = () => {
   const row3 = document.createElement('div');
-  row3.classList.add('row', 'mb-3')
+  row3.classList.add('row', 'mb-3');
 
   const row3col1 = document.createElement('div');
   row3col1.classList.add('col-6', 'd-flex', 'justify-content-center', 'align-items-center');
@@ -22,6 +22,6 @@ const row3 = () => {
   row3.appendChild(row3col2);
 
   return row3;
-}
+};
 
 export default row3();
