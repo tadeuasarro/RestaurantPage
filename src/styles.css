@@ -33,3 +33,8 @@
   background-size: cover;
   padding-top: 50%;
 }
+
+#contact:hover,
+#menu:hover {
+  cursor: pointer;
+}
