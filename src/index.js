@@ -1,5 +1,7 @@
 import _ from 'lodash';
+import './styles.css';
 import nav from './navbar.js';
+import main from './main.js';
 
 function component() {
 
@@ -7,7 +9,7 @@ function component() {
   element.id = 'content';
 
   element.appendChild(nav);
-  // content.appendChild(section);
+  element.appendChild(main);
   // content.appendChild(footer);
 
   return element;
