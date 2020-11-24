@@ -11,7 +11,7 @@
 ![screenshot](./src/img/screenshot.png)
 
 #### Livedemo
-- [Githack](https://rawcdn.githack.com/tadeuasarro/RestaurantPage/a5e67b4c5a54abb3f2bac401437f1dcf1de9b4a7/dist/index.html)
+- [Githack](https://rawcdn.githack.com/tadeuasarro/RestaurantPage/9b245ce13bee071b653c70232407baadb8606cdd/dist/index.html)
 
 
 ## Getting started

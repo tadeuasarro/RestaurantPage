@@ -11,6 +11,6 @@ const component = () => {
   element.appendChild(footer);
 
   return element;
-}
+};
 
 document.body.appendChild(component());

@@ -15,16 +15,15 @@ const header = () => {
 
   const contact = document.createElement('p');
 
-
-  const email = document.createElement  ('p');
+  const email = document.createElement('p');
   email.innerHTML = 'Email: sample@email.com';
   contact.appendChild(email);
 
-  const phone = document.createElement  ('p');
+  const phone = document.createElement('p');
   phone.innerHTML = 'Phone: (555) 555-1234';
   contact.appendChild(phone);
 
-  const adress = document.createElement  ('p');
+  const adress = document.createElement('p');
   adress.innerHTML = 'Adress: Sample Street - 123. Fantasy City';
   contact.appendChild(adress);
 

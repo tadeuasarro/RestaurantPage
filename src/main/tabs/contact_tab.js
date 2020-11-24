@@ -1,9 +1,11 @@
+/* eslint import/no-cycle: "off", curly: "off" */
+
 import menuTab from './menu_tab';
-import header from '../header';;
+import header from '../header';
 
 const contactTab = () => {
-  const local_container = document.createElement('div');
-  local_container.classList.add('mb-3');
+  const localContainer = document.createElement('div');
+  localContainer.classList.add('mb-3');
 
   const navbar = document.createElement('div');
   navbar.classList.add('d-flex', 'border-bottom');
@@ -30,17 +32,17 @@ const contactTab = () => {
   const division = document.createElement('div');
   division.classList.add('mb-0', 'p-3', 'bg-dark', 'text-justify');
 
-  const smaller_div = document.createElement('div');
-  smaller_div.classList.add('bg-white', 'p-3');
+  const smallerDiv = document.createElement('div');
+  smallerDiv.classList.add('bg-white', 'p-3');
 
-  smaller_div.appendChild(header);
-  division.appendChild(smaller_div);
+  smallerDiv.appendChild(header);
+  division.appendChild(smallerDiv);
 
   content.appendChild(title);
   content.appendChild(division);
 
-  local_container.appendChild(navbar);
-  local_container.appendChild(content);
+  localContainer.appendChild(navbar);
+  localContainer.appendChild(content);
 
   menu.addEventListener('click', () => {
     const smallContainer = document.getElementById('container');
@@ -48,7 +50,7 @@ const contactTab = () => {
     smallContainer.appendChild(menuTab);
   });
 
-  return local_container;
+  return localContainer;
 };
 
 export default contactTab();

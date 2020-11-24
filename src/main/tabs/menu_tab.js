@@ -1,5 +1,7 @@
+/* eslint import/no-cycle: "off", curly: "off" */
+
 import contactTab from './contact_tab';
-import container from '../container/container'
+import container from '../container/container';
 
 const menuTab = () => {
   const localContainer = document.createElement('div');
