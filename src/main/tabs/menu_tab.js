@@ -1,8 +1,9 @@
 import contactTab from './contact_tab';
+import container from '../container/container'
 
 const menuTab = () => {
-  const container = document.createElement('div');
-  container.classList.add('mb-3');
+  const localContainer = document.createElement('div');
+  localContainer.classList.add('mb-3');
 
   const navbar = document.createElement('div');
   navbar.classList.add('d-flex', 'border-bottom');
@@ -17,8 +18,8 @@ const menuTab = () => {
   menu.innerHTML = 'Menu';
   menu.id = 'menu';
 
-  navbar.appendChild(contact);
   navbar.appendChild(menu);
+  navbar.appendChild(contact);
 
   const content = document.createElement('div');
 
@@ -26,23 +27,23 @@ const menuTab = () => {
   title.innerHTML = 'Menu';
   title.classList.add('bg-dark', 'text-light', 'm-0', 'px-3', 'pt-3');
 
-  const paragraph = document.createElement('p');
-  paragraph.classList.add('mb-0', 'p-3', 'bg-dark', 'text-light', 'text-justify');
-  paragraph.innerHTML = 'Nullam nisl risus, accumsan at justo et, dapibus tristique sem. Phasellus pulvinar congue erat at suscipit. Sed a dolor posuere, egestas eros sed, imperdiet mauris. Curabitur finibus vel sem efficitur mollis. Nam vitae ante justo. Sed sollicitudin auctor diam, iaculis ullamcorper augue consectetur quis. Mauris libero augue, suscipit quis lacus non, feugiat gravida ipsum. Curabitur vitae dignissim nunc, et vehicula sem. Proin iaculis fringilla orci eu scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam sit amet lorem pharetra, vehicula nibh bibendum, vulputate sapien. Cras faucibus libero at lectus mollis pellentesque.';
+  const division = document.createElement('p');
+  division.classList.add('mb-0', 'p-3', 'bg-dark', 'text-justify');
+  division.appendChild(container);
 
   content.appendChild(title);
-  content.appendChild(paragraph);
+  content.appendChild(division);
 
-  container.appendChild(navbar);
-  container.appendChild(content);
+  localContainer.appendChild(navbar);
+  localContainer.appendChild(content);
 
   contact.addEventListener('click', () => {
-    const smallContainer = document.getElementById('small_container');
+    const smallContainer = document.getElementById('container');
     smallContainer.innerHTML = '';
     smallContainer.appendChild(contactTab);
   });
 
-  return container;
+  return localContainer;
 };
 
 export default menuTab();

@@ -12,10 +12,25 @@ const header = () => {
 
   const par2 = document.createElement('p');
   par2.innerHTML = 'Our business is totally dedicated to this Brazilian cousine delicacy.';
-  par2.classList.add('mb-0');
+
+  const contact = document.createElement('p');
+
+
+  const email = document.createElement  ('p');
+  email.innerHTML = 'Email: sample@email.com';
+  contact.appendChild(email);
+
+  const phone = document.createElement  ('p');
+  phone.innerHTML = 'Phone: (555) 555-1234';
+  contact.appendChild(phone);
+
+  const adress = document.createElement  ('p');
+  adress.innerHTML = 'Adress: Sample Street - 123. Fantasy City';
+  contact.appendChild(adress);
 
   parContainer.appendChild(par1);
   parContainer.appendChild(par2);
+  parContainer.appendChild(contact);
 
   emptyDivision.appendChild(headerImage);
   emptyDivision.appendChild(parContainer);

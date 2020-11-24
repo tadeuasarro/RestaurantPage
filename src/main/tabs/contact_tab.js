@@ -1,8 +1,9 @@
 import menuTab from './menu_tab';
+import header from '../header';;
 
 const contactTab = () => {
-  const container = document.createElement('div');
-  container.classList.add('mb-3');
+  const local_container = document.createElement('div');
+  local_container.classList.add('mb-3');
 
   const navbar = document.createElement('div');
   navbar.classList.add('d-flex', 'border-bottom');
@@ -17,8 +18,8 @@ const contactTab = () => {
   menu.innerHTML = 'Menu';
   menu.id = 'menu';
 
-  navbar.appendChild(contact);
   navbar.appendChild(menu);
+  navbar.appendChild(contact);
 
   const content = document.createElement('div');
 
@@ -26,23 +27,28 @@ const contactTab = () => {
   title.innerHTML = 'Contact';
   title.classList.add('bg-dark', 'text-light', 'm-0', 'px-3', 'pt-3');
 
-  const paragraph = document.createElement('p');
-  paragraph.classList.add('mb-0', 'p-3', 'bg-dark', 'text-light', 'text-justify');
-  paragraph.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia massa ligula, egestas rutrum augue vehicula sed. Morbi luctus eros at mattis blandit. Donec imperdiet suscipit quam. Pellentesque feugiat pharetra blandit. Aenean vitae pharetra arcu. In non ipsum elementum nisi fermentum vulputate non nec eros. Praesent sagittis ante a blandit semper. Morbi sit amet ex consectetur, euismod dui dapibus, eleifend nunc.';
+  const division = document.createElement('div');
+  division.classList.add('mb-0', 'p-3', 'bg-dark', 'text-justify');
+
+  const smaller_div = document.createElement('div');
+  smaller_div.classList.add('bg-white', 'p-3');
+
+  smaller_div.appendChild(header);
+  division.appendChild(smaller_div);
 
   content.appendChild(title);
-  content.appendChild(paragraph);
+  content.appendChild(division);
 
-  container.appendChild(navbar);
-  container.appendChild(content);
+  local_container.appendChild(navbar);
+  local_container.appendChild(content);
 
   menu.addEventListener('click', () => {
-    const smallContainer = document.getElementById('small_container');
+    const smallContainer = document.getElementById('container');
     smallContainer.innerHTML = '';
     smallContainer.appendChild(menuTab);
   });
 
-  return container;
+  return local_container;
 };
 
 export default contactTab();

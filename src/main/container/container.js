@@ -5,6 +5,7 @@ import row4 from './row4';
 
 const container = () => {
   const container = document.createElement('div');
+  container.classList.add('bg-white', 'p-3', 'text-dark');
 
   container.appendChild(row1);
   container.appendChild(row2);

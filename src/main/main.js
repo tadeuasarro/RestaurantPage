@@ -1,18 +1,11 @@
-import header from './header';
-import container from './container/container';
-import contactTab from './tabs/contact_tab';
+import menuTab from './tabs/menu_tab';
 
 const main = () => {
   const element = document.createElement('main');
-  element.classList.add('container');
+  element.classList.add('container', 'mt-3');
+  element.id = 'container';
 
-  element.appendChild(header);
-  element.appendChild(container);
-
-  const smallContainer = document.createElement('div');
-  smallContainer.appendChild(contactTab);
-  smallContainer.id = 'small_container';
-  element.appendChild(smallContainer);
+  element.appendChild(menuTab);
 
   return element;
 };

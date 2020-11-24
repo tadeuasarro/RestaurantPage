@@ -1,6 +1,6 @@
 const row4 = () => {
   const row4 = document.createElement('div');
-  row4.classList.add('row', 'mb-3');
+  row4.classList.add('row');
 
   const row4col1 = document.createElement('div');
   row4col1.classList.add('col-6', 'd-flex', 'justify-content-center', 'align-items-center');
