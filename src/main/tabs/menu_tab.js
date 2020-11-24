@@ -1,4 +1,3 @@
-/* eslint import/no-cycle: "off", curly: "off" */
 import contactTab from './contact_tab';
 
 const menuTab = () => {
@@ -41,12 +40,6 @@ const menuTab = () => {
     const smallContainer = document.getElementById('small_container');
     smallContainer.innerHTML = '';
     smallContainer.appendChild(contactTab);
-  });
-
-  menu.addEventListener('click', () => {
-    const smallContainer = document.getElementById('small_container');
-    smallContainer.innerHTML = '';
-    smallContainer.appendChild(menuTab());
   });
 
   return container;
