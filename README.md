@@ -16,6 +16,7 @@
 
 ## Getting started
 - run `git clone https://github.com/tadeuasarro/RestaurantPage.git`;
+- run `npx webpack` at the root of the project;
 - go to `../dist`;
 - open `index.html` with you favorite browser.
 
