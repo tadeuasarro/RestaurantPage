@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-image {
+  background-image: url("./img/coxinha0.png");
+  background-size: cover;
+  padding-top: 25%;
+}
+
+.image1-display {
+  background-image: url("./img/coxinha1.jpeg");
+  background-size: cover;
+  padding-top: 50%;
+}
+
+.image2-display {
+  background-image: url("./img/coxinha2.jpg");
+  background-size: cover;
+  padding-top: 50%;
+}
+
+.image3-display {
+  background-image: url("./img/coxinha3.jpg");
+  background-size: cover;
+  padding-top: 50%;
+}
+
+.image4-display {
+  background-image: url("./img/coxinha4.jpg");
+  background-size: cover;
+  padding-top: 50%;
+}
+
+#contact:hover,
+#menu:hover {
+  cursor: pointer;
+}
